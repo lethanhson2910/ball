@@ -110,9 +110,7 @@ public class BouncingBall extends JFrame {
 			g.fillOval(x, y, size, size);
 			//Mouse trail
 			g.setColor(Color.RED);
-			g.fill3DRect(mouseX-10, mouseY-10, 20, 20,true);
-			long duration = System.nanoTime()-start;
-			System.out.println("Time : " +duration );
+			g.fillOval(mouseX-10, mouseY-10, 20, 20);
 		}
 	}
 }
